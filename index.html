@@ -129,7 +129,15 @@
             Apasionado <strong>hombre para todo</strong> de la industria del <strong>cine</strong>
             y con mucha experiencia en mil cosas (especialmente con gatitos :D).
           </p>
-          <a class="hero__btn btn" href="#video">Sobre mi</a>
+          <div>
+            <button id="openDialogBtn" class="btn">Quien soy</button>
+            <div id="videoDialog" class="dialog">
+                <div class="dialog-content">
+                    <span id="closeDialogBtn" class="close">&times;</span>
+                    <iframe id="videoFrame" width="560" height="315" src="https://player.vimeo.com/video/806713496?h=80a107f6cf" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
         </section>
       </div>
       <section id="about" class="about container section">
@@ -317,32 +325,26 @@
       <section id="contact" class="contact container section">
         <h2 class="contact__title">Ponte en contacto conmigo</h2>
         <p class="contact__description">
-          Esta es mi descripcion de contacto (por cambiar)
+          Puedes contactarme con mi email alvaro_panadero@email.com o con mi teléfono +34 606 93 42 48
         </p>
         <a
           class="contact__btn btn"
           href="mailto:proyecto_noether@outlook.com"
           target="_blank"
-          >Contactame por email: alvaro_panadero@mail.com
+          >
+          <p>Contactame por email:</p>
+          <p>alvaro_panadero@email.com</p>
         </a>
         <a
           class="contact__btn btn"
           href="tel:+34606934248"
           target="_blank"
-          >Contactame por teléfono: +34 606 93 42 48
+          >
+          <p>Contactame por teléfono:</p>
+          <p>+34 606 93 42 48</p>
         </a>
       </section>
-      <section id="video">
-        <div>
-            <button id="openDialogBtn" class="btn">Open Video</button>
-            <div id="videoDialog" class="dialog">
-                <div class="dialog-content">
-                    <span id="closeDialogBtn" class="close">&times;</span>
-                    <iframe id="videoFrame" width="560" height="315" src="https://player.vimeo.com/video/806713496?h=80a107f6cf" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </section>    
+  
     </main>
     <footer class="footer container section">
       <h3 class="footer__title">~ Alvaro Panadero ~</h3>
