@@ -104,7 +104,7 @@
   }
 
   #hero_back {
-    background: no-repeat url("hero-background.png");
+    background: no-repeat url("hero_background.png");
     background-size: contain;
     transform: translateY(3rem);
     margin: 2em;
