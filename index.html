@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -8,8 +8,8 @@
       href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
       rel="stylesheet"
     />
-    <meta name="description" content="My Portfolio website" />
-    <meta name="keywords" content="web design, html, css, js" />
+    <meta name="description" content="Portfolio de Álvaro Panadero" />
+    <meta name="keywords" content="actor, cine, guionista, cineasta, alvaro, panadero" />
     <title>Portfolio Website - Alvaro Panadero Jimenez</title>
   </head>
   <body>
@@ -104,51 +104,43 @@
     </div>
     <!-- End of Mobile Navigation -->
     <main>
-      <section class="hero container">
-        <a target="_blank" href="https://www.instagram.com/caitlynjenner/">
-        </a>
-        <h2 class="hero__subtitle">Hola, soy Álvaro 👋</h2>
-        <h1 class="hero__title">
-          ACTOR Y <br />
-          CINEASTA
-        </h1>
-        <p class="hero__description">
-          Apasionado <strong>hombre para todo</strong> de la industria del <strong>cine</strong>
-           y con mucha experiencia en mil cosas (especialmente con gatitos :D).
-        </p>
-        <a class="hero__btn btn" href="#video">Sobre mi</a>
-      </section>
+      <div class="hero__background"></div>
+      <div id="hero_back" class="parent-container">
+        <section class="hero">
+          <h2 class="hero__subtitle">Hola, soy Álvaro 👋</h2>
+          <h1 class="hero__title">
+            ACTOR Y <br />
+            CINEASTA
+          </h1>
+          <p class="hero__description">
+            Apasionado <strong>hombre para todo</strong> de la industria del <strong>cine</strong>
+            y con mucha experiencia en mil cosas (especialmente con gatitos :D).
+          </p>
+          <a class="hero__btn btn" href="#video">Sobre mi</a>
+        </section>
+      </div>
       <section id="about" class="about container section">
         <div class="about__content">
           <h2 class="about__title">Sobre mi</h2>
           <p class="about__description">
-            Hola! Soy Álvaro Panadero
-            <strong> actor y guionista</strong> entre muchas otras cosas (hablemos de economia :D).
-            Vivo en Madrid y tengo experiencia en muchas cosas chulisimas (en paabras de la yolandisima).
+            Saludos, mi nombre es Álvaro Panadero, y soy actor madrileño, residente en Madrid
           </p>
           <p class="about__description">
-            Profesor de artes escenicas, miembro honorifico de la brigada anti revision historica, liberal a tiempo completo y 
-            programador amateur (no practicante), seguro que te sorprendera mi acento argentino.
+            Siempre me he ido formando como actor, en paralelo a mis estudios universitarios, y con diferentes profesionales
+            del sector: <i>Santiago A. Zannou, Juana Martínez, Andrés Cuenca, Laura Cepeda, Carla Calparsoro, Bonnie Morín…</i> Así mismo,
+            soy fundador, actor, director y dramaturgo en mi propia compañía teatral Vicio Escénico. Dentro de mi amplia experiencia,
+            me he desarrollado más en el audiovisual, habiendo trabajado con importantes cineastas como <i>Juana Macías, Polo Menárguez,
+            Juan Miguel del Castillo, Miguel A. Trudu o Ángel Gómez Hernández</i>
           </p>
           <p class="about__description">
-            Acabo de sacar un curso para crear ese 
-            <a>proyectazo de cine que tan poco dinero te va a dar</a> donde te explico como hacer realidad tus sueños 
-            (incluso como sacar dinero de ello :D).
+            Añadir que soy graduado en Historia por la <i>Universidad Complutense de Madrid, y Profesor de Geografía e Historia de ESO,
+            Bachillerato y FP por la Universidad Francisco de Vitoria de Pozuelo de Alarcón</i>. Formación académica que me ha sido muy útil
+            en mi aprendizaje y trabajo actoral; desde la investigación y construcción de personajes, afinando mi intuición, así como mi
+            capacidad resolutiva y de improvisación; sin obviar, la expresividad corporal, la voz, o la oratoria, pudiendo enfrentar textos
+            complejos y que requieren de gran memorización. También trabajo en inglés, al haber residido casi medio año en la ciudad de
+            Cork al sur de la República de Irlanda
           </p>
           <hr class="about__hr" />
-          <h3 class="about__subtitle">Habilidades</h3>
-          <div class="about__ul-container">
-            <ul class="about__ul">
-              <li class="about__list">Habilidad 1</li>
-              <li class="about__list">Habilidad 2</li>
-              <li class="about__list">Habilidad 3</li>
-            </ul>
-            <ul class="about__ul">
-              <li class="about__list">Habilidad 4</li>
-              <li class="about__list">Habilidad 5</li>
-              <li class="about__list">Habilidad 6</li>
-            </ul>
-          </div>
         </div>
         <div class="about__img-wrapper">
           <img
@@ -258,22 +250,6 @@
               src="https://via.placeholder.com/1920x968"
               data-src="/amar-es-para-siempre.jpg"
               alt="Slaying The Dragon blog"
-            />
-          </div>
-          <div class="featured__img-wrapper">
-            <img
-              class="lazy loading"
-              src="https://via.placeholder.com/1920x968"
-              data-src="/signin.png"
-              alt="Slaying The Dragon sign-in"
-            />
-          </div>
-          <div class="featured__img-wrapper">
-            <img
-              class="lazy loading"
-              src="https://via.placeholder.com/1920x968"
-              data-src="/app.png"
-              alt="Slaying The Dragon dashboard"
             />
           </div>
         </div>
@@ -443,7 +419,6 @@
       <section id="video" class="section">
         
         <iframe src="https://player.vimeo.com/video/806713496?h=80a107f6cf" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-        <a class="hero__btn btn" href="#">Inicio</a>
 
 </section>
     </main>

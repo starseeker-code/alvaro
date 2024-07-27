@@ -1,5 +1,7 @@
 .hero {
-  background-image: url("hero-background.jpg");
+  margin-left: auto;
+  position: relative;
+  opacity: 1;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -7,12 +9,12 @@
   align-items: center;
   gap: 1rem;
   margin-top: 2rem;
+  z-index: 1;
 }
 
-.hero__img {
-  border-radius: 50%;
-  width: 6rem;
-  height: 6rem;
+.parent-container {
+  position: relative;
+  display: flex; /* Make sure the parent container is positioned relatively */
 }
 
 .hero__subtitle {
@@ -38,12 +40,14 @@
 .hero__btn {
   text-transform: capitalize;
   font-size: var(--size-sm);
+  transform: translateY(2rem);
 }
 
 /* xs */
 @media (min-width: 475px) {
   .hero {
     gap: 1.5rem;
+    transform: translateX(-4rem);
   }
 
   .hero__img {
@@ -61,6 +65,7 @@
 
   .hero__description {
     font-size: var(--size-base);
+    padding: 4rem;
   }
 
   .hero__btn {
@@ -95,6 +100,14 @@
 
   .hero__btn {
     font-size: var(--size-lg);
+    transform: translateY(-2rem);
+  }
+
+  #hero_back {
+    background: no-repeat url("hero-background.png");
+    background-size: contain;
+    transform: translateY(3rem);
+    margin: 2em;
   }
 }
 

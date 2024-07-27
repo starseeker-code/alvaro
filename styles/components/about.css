@@ -5,6 +5,7 @@
 }
 
 .about__content {
+  text-align: justify;
   display: flex;
   flex-direction: column;
   gap: 1rem;
