@@ -18,36 +18,53 @@ mobileNav();
 darkMode();
 lazyLoading();
 
-document.getElementById('openDialogBtn').addEventListener('click', function() {
-    if (window.innerWidth > 475) {
-        document.body.classList.add('dimmed');
-        const dialog = document.getElementById('videoDialog');
-        dialog.classList.add('show');
-        setTimeout(() => {
-            dialog.style.display = 'flex';
-        }, 10); // slight delay to ensure transition effect
-    } else {
-        window.open('https://vimeo.com/806713496', '_blank');
-    }
-});
+if (window.innerWidth > 475) {
+    const newHtmlContent = `
+        <div id="videoDialog" class="dialog">
+            <div class="dialog-content">
+                <span id="closeDialogBtn" class="close">&times;</span>
+                <iframe id="videoFrame" width="560" height="315" src="https://player.vimeo.com/video/806713496?h=80a107f6" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    `;
+    let dynamicHtml = document.getElementById('openDialogBtn');
+    dynamicHtml.insertAdjacentHTML('beforeend', newHtmlContent);
+}
 
-document.getElementById('closeDialogBtn').addEventListener('click', function() {
-    document.body.classList.remove('dimmed');
-    const dialog = document.getElementById('videoDialog');
-    dialog.classList.remove('show');
-    setTimeout(() => {
-        dialog.style.display = 'none';
-    }, 300); // wait for the transition to complete
-});
+document.addEventListener('DOMContentLoaded', function() {
+    const openDialogBtn = document.getElementById('openDialogBtn');
+    const videoDialog = document.getElementById('videoDialog');
+    const closeDialogBtn = document.getElementById('closeDialogBtn');
 
-// Close the dialog when clicking outside the dialog content
-window.addEventListener('click', function(event) {
-    const dialog = document.getElementById('videoDialog');
-    if (event.target === dialog) {
+    openDialogBtn.addEventListener('click', function() {
+        if (window.innerWidth > 475) {
+            document.body.classList.add('dimmed');
+            videoDialog.classList.add('show');
+            setTimeout(() => {
+                videoDialog.style.display = 'flex';
+            }, 10); // slight delay to ensure transition effect
+        } else {
+            window.open('https://vimeo.com/806713496', '_blank');
+        }
+    });
+
+    closeDialogBtn.addEventListener('click', function() {
         document.body.classList.remove('dimmed');
-        dialog.classList.remove('show');
+        videoDialog.classList.remove('show');
         setTimeout(() => {
-            dialog.style.display = 'none';
+            videoDialog.style.display = 'none';
         }, 300); // wait for the transition to complete
-    }
+    });
+
+    // Close the dialog when clicking outside the dialog content
+    window.addEventListener('click', function(event) {
+        if (event.target === videoDialog) {
+            document.body.classList.remove('dimmed');
+            videoDialog.classList.remove('show');
+            setTimeout(() => {
+                videoDialog.style.display = 'none';
+            }, 300); // wait for the transition to complete
+        }
+    });
 });
+
