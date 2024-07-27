@@ -88,6 +88,7 @@
 
   .hero__subtitle {
     font-size: var(--size-2xl);
+    text-shadow: 1px 1px 3px #f1f5f9;
   }
 
   .hero__title {

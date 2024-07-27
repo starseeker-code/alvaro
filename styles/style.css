@@ -100,3 +100,15 @@ body::-webkit-scrollbar-thumb {
 .mobile_icons {
   margin: 5px;
 }
+
+.return_up {
+  width: 50px;
+  height: 50px;
+  position: fixed; /* Use 'fixed' to position it relative to the viewport */
+  bottom: 20px; /* Position it 20px from the bottom */
+  right: 20px; /* Position it 20px from the right */
+  z-index: 9999; /* Optional: Make sure it's on top of other elements */
+  display: flex; /* Center content */
+  justify-content: center; /* Center content */
+  align-items: center; /* Center content */
+}
