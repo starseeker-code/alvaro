@@ -38,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     openDialogBtn.addEventListener('click', function() {
         if (window.innerWidth > 475) {
-            document.body.classList.add('dimmed');
             videoDialog.classList.add('show');
             setTimeout(() => {
                 videoDialog.style.display = 'flex';
@@ -49,7 +48,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     closeDialogBtn.addEventListener('click', function() {
-        document.body.classList.remove('dimmed');
         videoDialog.classList.remove('show');
         setTimeout(() => {
             videoDialog.style.display = 'none';

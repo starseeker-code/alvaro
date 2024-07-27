@@ -131,6 +131,10 @@
       font-size: 20px;
       cursor: pointer;
   }
+  
+  .show {
+    opacity: 1;
+  }
 }
 
 /* md */
@@ -200,6 +204,10 @@
       font-size: 20px;
       cursor: pointer;
   }
+  
+  .show {
+    opacity: 1;
+  }
 }
 
 /* xl */
@@ -267,6 +275,10 @@
       right: 10px;
       font-size: 20px;
       cursor: pointer;
+  }
+  
+  .show {
+    opacity: 1;
   }
 }
 
