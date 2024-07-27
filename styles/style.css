@@ -96,3 +96,7 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--clr-rose);
   outline: 1px solid var(--clr-rose);
 }
+
+.mobile_icons {
+  margin: 5px;
+}

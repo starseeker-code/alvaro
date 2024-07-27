@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
         videoDialog.classList.remove('show');
         setTimeout(() => {
             videoDialog.style.display = 'none';
-        }, 300); // wait for the transition to complete
+        }, 500); // wait for the transition to complete
     });
 
     // Close the dialog when clicking outside the dialog content
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
             videoDialog.classList.remove('show');
             setTimeout(() => {
                 videoDialog.style.display = 'none';
-            }, 300); // wait for the transition to complete
+            }, 500); // wait for the transition to complete
         }
     });
 });
