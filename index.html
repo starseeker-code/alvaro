@@ -8,6 +8,10 @@
       href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="styles/video.css"
+      rel="stylesheet"
+    />
     <meta name="description" content="Portfolio de Álvaro Panadero" />
     <meta name="keywords" content="actor, cine, guionista, cineasta, alvaro, panadero" />
     <title>Portfolio Website - Alvaro Panadero Jimenez</title>
@@ -20,7 +24,7 @@
             <a class="header__link" href="#about">Sobre mi</a>
           </li>
           <li>
-            <a class="header__link" href="#featured">Trabajo</a>
+            <a class="header__link" href="#work">Proyectos</a>
           </li>
           <li>
             <a class="header__link" href="#contact">Contacto</a>
@@ -44,11 +48,21 @@
             </button>
           </li>
           <li>
-            <a class="header__resume btn" target="_blank" href="https://www.e-talenta.eu/members/profile/alvaro-panadero">Etalenta</a>
+            <a class="header__resume" target="_blank" href="https://www.e-talenta.eu/members/profile/alvaro-panadero">
+              <img src="etalenta.png" width="32px" height="32px"/>
+            </a>
           </li>
           <li>
-            <a class="header__resume btn" target="_blank" href="#">Curriculum</a>
+            <a class="header__resume" target="_blank" href="https://www.instagram.com/alvaropanadero_/">
+              <img src="ig_new.png" width="32px" height="32px"/>
+            </a>
           </li>
+          <li>
+            <a class="header__resume" target="_blank" href="#">
+              <img src="pdf.png" />
+            </a>
+          </li>
+          <li></li>
         </ul>
         <button aria-label="mobile nav button" class="header__bars">
           <svg
@@ -104,7 +118,6 @@
     </div>
     <!-- End of Mobile Navigation -->
     <main>
-      <div class="hero__background"></div>
       <div id="hero_back" class="parent-container">
         <section class="hero">
           <h2 class="hero__subtitle">Hola, soy Álvaro 👋</h2>
@@ -149,109 +162,6 @@
             data-src="/about.jpg"
             alt="Profile picture"
           />
-        </div>
-      </section>
-      <section id="featured" class="featured container section">
-        <h3 class="featured__subtitle">Proyecto mas relevante</h3>
-        <div class="featured__wrapper">
-          <h2 class="featured__title">Herederas</h2>
-          <a
-            aria-label="link featured projects"
-            class="featured__link"
-            href="#"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
-              />
-            </svg>
-          </a>
-        </div>
-        <p class="featured__description">
-          ESTA ES UNA DESCRIPCION DEL PROYECTO | Cillum voluptate tempor cillum culpa cupidatat labore voluptate
-          ullamco voluptate culpa sunt nulla non. Ad cupidatat dolore quis amet
-          pariatur consectetur ullamco. Officia quis id velit duis cupidatat
-          sunt deserunt do aliquip nulla laboris.
-        </p>
-        <div class="featured__info-container">
-          <div>
-            <h3 class="featured__label">Mas cosas chulisimas</h3>
-            <ul class="featured__tech-stack">
-              <li class="featured__info">Cosa 1</li>
-              <li class="featured__info">Cosa 2</li>
-              <li class="featured__info">Cosa 3</li>
-              <li class="featured__info">Cosa 4</li>
-              <li class="featured__info">Cosa 5</li>
-              <li class="featured__info">Cosa 6</li>
-              <li class="featured__info">Cosa 7</li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="featured__label">Proyectos</h3>
-            <p class="featured__info">Info de proyectos</p>
-          </div>
-          <div>
-            <h3 class="featured__label">Timeline</h3>
-            <p class="featured__info">Enero 2014 - presente</p>
-          </div>
-        </div>
-        <div class="featured__img-container">
-          <div class="featured__img-wrapper">
-            <img
-              class="lazy loading"
-              src="https://via.placeholder.com/1920x968"
-              data-src="/no-es-nada-personal.jpg"
-              alt="No es nada personal movie"
-            />
-          </div>
-          <div class="featured__img-wrapper">
-            <img
-              class="lazy loading"
-              src="https://via.placeholder.com/1920x968"
-              data-src="/ella.jpg"
-              alt="Ella movie"
-            />
-          </div>
-          <div class="featured__img-wrapper">
-            <img
-              class="lazy loading"
-              src="https://via.placeholder.com/1920x968"
-              data-src="/se-que-estare.jpg"
-              alt="Se que estare movie"
-            />
-          </div>
-          <div class="featured__img-wrapper">
-            <img
-              class="lazy loading"
-              src="https://via.placeholder.com/1920x968"
-              data-src="/claudicar.jpg"
-              alt="Claudicar movie"
-            />
-          </div>
-          <div class="featured__img-wrapper">
-            <img
-              class="lazy loading"
-              src="https://via.placeholder.com/1920x968"
-              data-src="/novia-gitana.jpg"
-              alt="Slaying The Dragon faqs"
-            />
-          </div>
-          <div class="featured__img-wrapper">
-            <img
-              class="lazy loading"
-              src="https://via.placeholder.com/1920x968"
-              data-src="/amar-es-para-siempre.jpg"
-              alt="Slaying The Dragon blog"
-            />
-          </div>
         </div>
       </section>
       <section class="work container section">
@@ -413,14 +323,26 @@
           class="contact__btn btn"
           href="mailto:proyecto_noether@outlook.com"
           target="_blank"
-          >Contactame</a
-        >
+          >Contactame por email: alvaro_panadero@mail.com
+        </a>
+        <a
+          class="contact__btn btn"
+          href="tel:+34606934248"
+          target="_blank"
+          >Contactame por teléfono: +34 606 93 42 48
+        </a>
       </section>
-      <section id="video" class="section">
-        
-        <iframe src="https://player.vimeo.com/video/806713496?h=80a107f6cf" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-
-</section>
+      <section id="video">
+        <div>
+            <button id="openDialogBtn" class="btn">Open Video</button>
+            <div id="videoDialog" class="dialog">
+                <div class="dialog-content">
+                    <span id="closeDialogBtn" class="close">&times;</span>
+                    <iframe id="videoFrame" width="560" height="315" src="https://player.vimeo.com/video/806713496?h=80a107f6cf" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>    
     </main>
     <footer class="footer container section">
       <h3 class="footer__title">~ Alvaro Panadero ~</h3>
