@@ -18,20 +18,20 @@ mobileNav();
 darkMode();
 lazyLoading();
 
-if (window.innerWidth > 475) {
-    const newHtmlContent = `
-        <div id="videoDialog" class="dialog">
-            <div class="dialog-content">
-                <span id="closeDialogBtn" class="close">&times;</span>
-                <iframe id="videoFrame" width="560" height="315" src="https://player.vimeo.com/video/806713496?h=80a107f6" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-    `;
-    let dynamicHtml = document.getElementById('openDialogBtn');
-    dynamicHtml.insertAdjacentHTML('beforeend', newHtmlContent);
-}
-
 document.addEventListener('DOMContentLoaded', function() {
+    if (window.innerWidth > 475) {
+        const newHtmlContent = `
+            <div id="videoDialog" class="dialog">
+                <div class="dialog-content">
+                    <span id="closeDialogBtn" class="close">&times;</span>
+                    <iframe id="videoFrame" width="560" height="315" src="https://player.vimeo.com/video/806713496?h=80a107f6" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        `;
+        let dynamicHtml = document.getElementById('openDialogBtn');
+        dynamicHtml.insertAdjacentHTML('afterend', newHtmlContent);
+    }
+
     const openDialogBtn = document.getElementById('openDialogBtn');
     const videoDialog = document.getElementById('videoDialog');
     const closeDialogBtn = document.getElementById('closeDialogBtn');
@@ -67,4 +67,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
